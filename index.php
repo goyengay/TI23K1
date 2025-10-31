@@ -13,7 +13,7 @@
          <input type="submit" name="hitung" value="jumlahkan">
         </form>
     <?php
-    if ($_POST)
+    if (isset($_POST['hitung']))
     {
         $bilangan1 = $_POST['bilangan1'];
         $bilangan2 = $_POST['bilangan2'];
@@ -26,8 +26,7 @@
         } else {
             echo "<p> Input harus berupa angka!";
         }
-    }else {
-        echo "<p>tidak berhasil";
+    
     }
 
     ?>
